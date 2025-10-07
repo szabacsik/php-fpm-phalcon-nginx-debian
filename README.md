@@ -22,11 +22,11 @@ This image uses an automated versioning system that creates detailed tags based 
 
 **Format:** `php{VERSION}-phc{VERSION}-ng{VERSION}-deb{VERSION}`
 
-**Example:** `php8.4.11-phc5.9.3-ng1.22.1-deb12.11`
-- `php8.4.11` - PHP-FPM version 8.4.11
+**Example:** `php8.4.13-phc5.9.3-ng1.22.1-deb12.12`
+- `php8.4.13` - PHP-FPM version 8.4.13
 - `phc5.9.3` - Phalcon framework version 5.9.3
 - `ng1.22.1` - Nginx server version 1.22.1
-- `deb12.11` - Debian base system version 12.11
+- `deb12.12` - Debian base system version 12.12
 
 This versioning ensures complete transparency about what's included in each image and allows you to pin to specific component versions for deployments.
 
@@ -64,8 +64,8 @@ docker run -d -p 8080:8080 szabacsik/php-fpm-phalcon-nginx-bookworm:latest
 **Using Specific Version:**
 ```bash
 # Use a specific version tag for production stability
-docker pull szabacsik/php-fpm-phalcon-nginx-bookworm:php8.4.11-phc5.9.3-ng1.22.1-deb12.11
-docker run -d -p 8080:8080 szabacsik/php-fpm-phalcon-nginx-bookworm:php8.4.11-phc5.9.3-ng1.22.1-deb12.11
+docker pull szabacsik/php-fpm-phalcon-nginx-bookworm:php8.4.13-phc5.9.3-ng1.22.1-deb12.12
+docker run -d -p 8080:8080 szabacsik/php-fpm-phalcon-nginx-bookworm:php8.4.13-phc5.9.3-ng1.22.1-deb12.12
 ```
 
 ### Customization Examples
