@@ -1,5 +1,5 @@
 # Build stage - for compiling Phalcon extension
-FROM php:8.4.13-fpm-bookworm AS builder
+FROM php:8.4.14-fpm-bookworm AS builder
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
 FROM php:8.4-fpm-bookworm
 
 LABEL org.opencontainers.image.title="PHP Phalcon Nginx Debian Stack"
-LABEL org.opencontainers.image.version="php8.4.13-phc5.9.3-ng1.22.1-deb12.12"
+LABEL org.opencontainers.image.version="php8.4.14-phc5.9.3-ng1.22.1-deb12.12"
 LABEL org.opencontainers.image.authors="András Szabácsik <https://github.com/szabacsik>"
 
 ENV DEBIAN_FRONTEND=noninteractive
